@@ -1,0 +1,24 @@
+<h1>Angular Route Sample</h1>
+<!--This commented out code is used to display data in the both crisis 
+list and heroes list component, on the same page-->
+<!--app-crisis-list></app-crisis-list>
+<app-heroes-list></app-heroes-list-->
+
+  <!--Used the router-outlet to configure router path for components-->
+  <router-outlet></router-outlet>
+
+  <!--The nav directive  to help in navigating between pages-->
+  <nav>
+    <a 
+      class="button" 
+      routerLink="/crisis-list" 
+      routerLinkActive="activebutton">
+      Crisis Center
+    </a> |
+    <a 
+      class="button" 
+      routerLink="/heroes-list"
+      routerLinkActive="activebutton">
+      Heroes
+    </a>
+  </nav>
